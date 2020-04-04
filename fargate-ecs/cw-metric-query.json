@@ -1,0 +1,103 @@
+[
+    {
+        "Id": "total",
+        "Expression": "SUM(METRICS())",
+        "Label": "TotalRunningTasks"
+    },
+    {
+        "Id": "one",
+        "MetricStat": {
+            "Metric": {
+                "Namespace": "ECS/ContainerInsights",
+                "MetricName": "RunningTaskCount",
+                "Dimensions": [
+                    {
+                        "Name": "ClusterName",
+                        "Value": "fargate-ecs"
+                    },
+                    {
+                        "Name": "ServiceName",
+                        "Value": "one"
+                    }
+                ]
+            },
+            "Period": 60,
+            "Stat": "Maximum",
+            "Unit": "Count"
+        },
+        "Label": "one",
+        "ReturnData": true
+    },
+    {
+        "Id": "two",
+        "MetricStat": {
+            "Metric": {
+                "Namespace": "ECS/ContainerInsights",
+                "MetricName": "RunningTaskCount",
+                "Dimensions": [
+                    {
+                        "Name": "ClusterName",
+                        "Value": "fargate-ecs"
+                    },
+                    {
+                        "Name": "ServiceName",
+                        "Value": "two"
+                    }
+                ]
+            },
+            "Period": 60,
+            "Stat": "Maximum",
+            "Unit": "Count"
+        },
+        "Label": "two",
+        "ReturnData": true
+    },
+    {
+        "Id": "three",
+        "MetricStat": {
+            "Metric": {
+                "Namespace": "ECS/ContainerInsights",
+                "MetricName": "RunningTaskCount",
+                "Dimensions": [
+                    {
+                        "Name": "ClusterName",
+                        "Value": "fargate-ecs"
+                    },
+                    {
+                        "Name": "ServiceName",
+                        "Value": "three"
+                    }
+                ]
+            },
+            "Period": 60,
+            "Stat": "Maximum",
+            "Unit": "Count"
+        },
+        "Label": "three",
+        "ReturnData": true
+    },
+    {
+        "Id": "four",
+        "MetricStat": {
+            "Metric": {
+                "Namespace": "ECS/ContainerInsights",
+                "MetricName": "RunningTaskCount",
+                "Dimensions": [
+                    {
+                        "Name": "ClusterName",
+                        "Value": "fargate-ecs"
+                    },
+                    {
+                        "Name": "ServiceName",
+                        "Value": "andahalf"
+                    }
+                ]
+            },
+            "Period": 60,
+            "Stat": "Maximum",
+            "Unit": "Count"
+        },
+        "Label": "andahalf",
+        "ReturnData": true
+    }
+]

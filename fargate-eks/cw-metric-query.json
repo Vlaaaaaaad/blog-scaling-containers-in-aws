@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "total",
+    "MetricStat": {
+      "Metric": {
+        "Namespace": "ContainerInsights",
+        "MetricName": "namespace_number_of_running_pods",
+        "Dimensions": [
+          {
+            "Name": "ClusterName",
+            "Value": "vanilla-eks"
+          },
+          {
+            "Name": "Namespace",
+            "Value": "fargate"
+          }
+        ]
+      },
+      "Period": 60,
+      "Stat": "Maximum",
+      "Unit": "Count"
+    },
+    "Label": "TotalRunningTasks",
+    "ReturnData": true
+  }
+]
